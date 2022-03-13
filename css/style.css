@@ -34,7 +34,7 @@ body{
     padding-top: 3rem;
     border-radius: 15px;
     transition: margin-top .4s ease-in;
-    color: white!important;
+    color: white;
 }
 
 .secret-mgs{
