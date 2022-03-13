@@ -68,6 +68,19 @@ body{
 .single-card:hover p{
     color: #fff;
 }
+
+/* -------- footer section------- */
+footer img{
+    filter: brightness(90%);
+}
+
+
+
+
+
+/* ==============
+ Responsive for mobile device
+============= */
 @media only screen and (max-width:640px) {
     .carousel-item img{
         width: 100%;
