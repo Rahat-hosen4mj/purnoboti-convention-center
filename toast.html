@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Toast</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        
+        <title>Hello, world!</title>
+    </head>
+
+    <body>
+        <h2>Hello banglases</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sapiente cupiditate laudantium architecto perferendis ipsum error similique optio, libero mollitia velit quidem ipsa veritatis, sunt eveniet voluptates esse facere blanditiis quis molestiae, beatae atque. Doloremque iusto facere nam in quia cupiditate dolorum blanditiis sed nemo officia, ipsa magni esse cumque delectus rem omnis at. Amet neque corporis facilis repudiandae nobis beatae excepturi laudantium, quisquam magnam ab quaerat nostrum expedita, doloribus minus possimus suscipit voluptatibus tenetur in aspernatur natus sint laborum, quia a. Quod harum quia laudantium labore iste fugit corrupti consequatur, animi ipsa tempora nam ipsum aliquid ea cum deserunt consequuntur autem? Vel aliquid repellat impedit, reiciendis obcaecati doloribus dolores ducimus assumenda? Saepe assumenda nulla sunt nihil velit architecto in ab veniam vitae dolor quas laudantium possimus eveniet, porro ea qui. Error nemo possimus debitis obcaecati, sint fuga velit eveniet quis nulla. Aliquam, qui at natus unde illo aliquid? Nihil illum aliquam delectus expedita possimus, vitae assumenda modi quisquam minus qui, officia impedit quam mollitia maxime cupiditate! Praesentium aliquid placeat officiis corrupti temporibus ad quas molestias ipsa, doloremque assumenda tempore dolore deleniti ipsum quis vel iste, at velit modi eligendi incidunt? Illum doloremque sequi ducimus error deleniti ipsam, iste quos aperiam provident mollitia explicabo aliquam! At nostrum beatae rem molestiae quis iste impedit quisquam, quia blanditiis harum fugiat odit? Veniam consectetur voluptate maxime totam corporis alias ipsum? Ratione, dolorem. Animi quisquam, officia quas ipsa velit ut quos omnis assumenda cupiditate consectetur eligendi dolores odio saepe excepturi fugit sed eum labore, at dolor. Ratione aperiam similique explicabo fugiat harum repellendus illo vitae deserunt ea est doloremque amet esse, temporibus quo quam. Molestiae, in. Porro sapiente optio a nostrum quis cupiditate commodi esse officiis deleniti ea placeat nesciunt aliquid totam earum neque labore repudiandae sed fugit quod recusandae provident, ducimus deserunt. Molestias nihil mollitia est quas in adipisci ratione, minima fuga odio nam fugiat. Reiciendis totam impedit ab facilis distinctio nam veniam, ex incidunt rem saepe, laborum praesentium quos voluptate natus consequuntur molestiae officia, voluptates alias id cum! Voluptates ullam reiciendis rerum repudiandae omnis obcaecati beatae, corporis illum enim. Ad soluta aut maiores quia vitae minima, earum consectetur optio sunt quod eos ab commodi magni nemo odit ratione laborum! Aut sequi impedit adipisci ipsam minus sit sunt voluptate corrupti minima non ut ipsa optio rerum explicabo, facilis incidunt autem soluta sed consequuntur quidem dicta accusantium, fugit esse possimus! Saepe molestias modi ducimus.</p>
+        <div class="container border border-2 border-primary">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-success" onclick="Toasty( )">Toast Me UPPPP</button>
+                    
+                    <div class="toast" id="EpicToast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 20px; right: 20px;">
+                        <div class="toast-header">
+                            <strong class="mr-auto">Bootstrap Toast</strong>
+                            
+                            <small>I want some toast</small>
+                            
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        
+                        <div class="toast-body">
+                            Hello, world! I am eating toast
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional JavaScript -->
+        <!-- Popper.js first, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        
+        <script>
+            var option = 
+            {
+                animation : true,
+                delay : 3000
+            };
+            
+            function Toasty( )
+            {
+                var toastHTMLElement = document.getElementById( 'EpicToast' );
+                
+                var toastElement = new bootstrap.Toast( toastHTMLElement, option );
+                
+                toastElement.show( );
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>
